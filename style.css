@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #16161a;
+  color: white;
+  text-align: center;
+}
+h1 {
+  font-size: 40px;
+  margin-top: 40px;
+}
+
+.container {
+  height: 70vh;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.game {
+  height: 60vmin;
+  width: 60vmin;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5vmin;
+}
+
+.box {
+  height: 18vmin;
+  width: 18vmin;
+  border-radius: 1rem;
+  border: none;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+  font-size: 8vmin;
+  color: #000000;
+  background-color: white;
+}
+
+.box.x {
+  background-color: #ff6347; /* Red for X */
+}
+
+.box.o {
+  background-color: #1e90ff; /* Blue for O */
+}
+#reset-btn {
+  padding: 1rem 2rem 1rem 2rem;
+  font-size: 1.25rem;
+  background-color: #7f5af0;
+  color: #fff;
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 20px;
+  transition: background-color 1s;
+  font-weight: 600;
+}
+#reset-btn:hover {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+
+#new-btn {
+  padding: 1rem 2rem 1rem 2rem;
+  font-size: 1.25rem;
+  background-color: #7f5af0;
+  color: #fff;
+  border-radius: 5px;
+  border: none;
+  transition: background-color 1s;
+  font-weight: 600;
+}
+#new-btn:hover {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+
+#msg {
+  color: white;
+  font-size: 5vmin;
+}
+
+.msg-container {
+  height: 100vmin;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.hide {
+  display: none;
+}
